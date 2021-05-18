@@ -1,5 +1,4 @@
 # -*- coding:utf-8 -*-
-from genericpath import exists
 import os
 import argparse
 import dataclasses
@@ -8,7 +7,7 @@ import re
 import shutil
 import time
 import zipfile
-from typing import List, Optional, final
+from typing import List, Optional
 
 WIN32_PATH_SEP = '\\'
 PATH_SEP = '/'
@@ -59,7 +58,7 @@ def package(dirname: str,
         wfp = open(dest, 'w', encoding=SPEC_FILE_ENCODING)
         wfp.write(content)
         wfp.close()
-        
+
         print(f'Added {src} -> {dest}')
 
     # Create zip file.
@@ -71,7 +70,7 @@ def package(dirname: str,
     for name in spec.required_files:
         path = os.path.join(temp_dir, name)
         zfp.write(path, name)
-    
+
     zfp.close()
     print(f'Package {output_file} created.')
 
@@ -81,7 +80,7 @@ def cleanup():
         return
 
     shutil.rmtree(temp_dir)
-    print(f"Temporary directory {temp_dir} cleaned.")    
+    print(f"Temporary directory {temp_dir} cleaned.")
 
 
 if __name__ == '__main__':
