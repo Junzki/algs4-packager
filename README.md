@@ -59,7 +59,7 @@ A packager for Princeton's Algorithm on Coursera.
     ```
     python3 package.py src/main/java/Percolation
     ```
-    __⚠️ Note: Do NOT use Python 2.x__
+    _⚠️ Note: Do NOT use Python 2.x_
 
 4. After execution, you can see a newly created `Percolation.zip` in current directory, like below:
     ```
