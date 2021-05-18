@@ -47,11 +47,11 @@ A packager for Princeton's Algorithm on Coursera.
     Content in `package.json` like below:
     ```json
     {
-    "required_files": [
-        "Percolation.java",
-        "PercolationStats.java"
-    ],
-    "remove_package_statement": true
+        "required_files": [
+            "Percolation.java",
+            "PercolationStats.java"
+        ],
+        "remove_package_statement": true
     }
     ```
 
