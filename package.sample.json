@@ -1,0 +1,7 @@
+{
+    "required_files": [
+        "file1.java",
+        "file2.java"
+    ],
+    "remove_package_statement": true
+}
