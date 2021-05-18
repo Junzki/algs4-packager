@@ -15,8 +15,8 @@ A packager for Princeton's Algorithm on Coursera.
     ```
     python package.py  /path/to/source/code/directory
     ```
-4. Now you can find a newly created zip package like `<ProjectName.zip>` in your working directory.
-5. Submit the `<ProjectName.zip>`
+4. Now you can find a newly created zip package like `<ProjectName>.zip` in your working directory.
+5. Submit the `<ProjectName>.zip`
 
 ### Example
 1. When you are about to submit the `Precolation` task, directory tree like below:
